@@ -65,22 +65,90 @@ using namespace std;
 
 // single inharitance 
 
-class Animal{
-    public:
-    int age;
-     int weight;
+// class Animal{
+//     public:
+//     int age;
+//      int weight;
+//      public:
+//      void speak(){
+//         cout<<"speaking"<<endl;
+
+//      }
+// };
+//  class Dog : public Animal{
+
+//  };
+// int main(){
+//     Dog d;
+//     d.speak();
+//     cout<<d.age<<endl;
+    
+// }
+
+//  multilevel inheritance 
+
+// #include<iostream>
+// using namespace std;
+// class animal{
+//      public:
+//       int age;
+//        int weight;
+//        public:
+//         void speek(){
+//             cout<<" speaking"<<endl;
+//         }
+// };
+// class dog: public animal{
+
+// };
+// class germanshapherd : public dog{
+
+// };
+
+// int main(){
+//     germanshapherd g;
+//     g.speek();
+
+//     dog d;
+//     d.speek();
+//     cout<<d.age<<endl;
+
+// }
+
+//   multiple inheritance ///////////////////////
+
+#include<iostream>
+using namespace std;
+class animal{
+     public:
+      int age;
+       int weight;
+       public:
+        void bark(){
+            cout<<" speaking"<<endl;
+        }
+};
+ class human {
+     public:
+     string color;
      public:
      void speak(){
         cout<<"speaking"<<endl;
-
      }
-};
- class Dog : public Animal{
+
+
 
  };
+ class hybrid :public animal, public human{
+
+ };
+
+
+
 int main(){
-    Dog d;
-    d.speak();
-    cout<<d.age<<endl;
+    hybrid obj1;
+    obj1.speak();
+    obj1.bark();
     
+
 }
