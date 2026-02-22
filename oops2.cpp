@@ -78,6 +78,8 @@ using namespace  std;
 
 
 //  }
+
+
 //   single inheritance
 
 // #include<iostream>
@@ -135,6 +137,7 @@ using namespace  std;
 
 // #include<iostream>
 // using namespace std;
+
 // class animal{
 //      public:
 //       int age;
@@ -168,6 +171,7 @@ using namespace  std;
     
 
 // }
+
 //  hierarachiacal inheritance 
 
 // #include<iostream>

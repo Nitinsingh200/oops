@@ -117,38 +117,81 @@ using namespace std;
 
 //   multiple inheritance ///////////////////////
 
-#include<iostream>
-using namespace std;
-class animal{
-     public:
-      int age;
-       int weight;
-       public:
-        void bark(){
-            cout<<" speaking"<<endl;
-        }
-};
- class human {
-     public:
-     string color;
-     public:
-     void speak(){
-        cout<<"speaking"<<endl;
-     }
+// #include<iostream>
+// using namespace std;
+// class animal{
+//      public:
+//       int age;
+//        int weight;
+//        public:
+//         void bark(){
+//             cout<<" speaking"<<endl;
+//         }
+// };
+//  class human {
+//      public:
+//      string color;
+//      public:
+//      void speak(){
+//         cout<<"speaking"<<endl;
+//      }
 
 
 
- };
- class hybrid :public animal, public human{
+//  };
+//  class hybrid :public animal, public human{
 
- };
+//  };
 
 
 
-int main(){
-    hybrid obj1;
-    obj1.speak();
-    obj1.bark();
+// int main(){
+//     hybrid obj1;
+//     obj1.speak();
+//     obj1.bark();
     
 
-}
+// }
+//  hierarachiacal inheritance 
+
+#include<iostream>
+ using namespace std;
+
+  class a{
+    public:
+    void func1(){
+        cout<<" inside function  1"<<endl;
+    }
+
+  };
+   class b : public a{
+    public:
+    void func2(){
+        cout<<" inside function  2"<<endl;
+
+    }
+
+   };
+   class c: public a{
+    public:
+    void func3(){
+        cout<<" inside function  3"<<endl;
+
+
+    }
+
+   };
+int main(){
+
+    a object1;
+     object1. func1();
+    b object2;
+     object2. func1();
+     object2. func2();
+
+    c  object3;
+     object3. func1();
+     object3. func3();
+
+
+  }
